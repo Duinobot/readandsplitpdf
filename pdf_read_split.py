@@ -18,12 +18,10 @@ for idx, page in enumerate(reader.pages):
                 #save file
                 with open('{0}{1}.pdf'.format(PDF_PATH, imei_no), 'wb') as f:
                     writer.write(f)
-                    f.close()
             else:
                 #add next page and save file
                 writer.add_page(reader.pages[idx+1])
                 with open('{0}{1}.pdf'.format(PDF_PATH, imei_no), 'wb') as f:
                     writer.write(f)
-                    f.close()
         except:
             print("Error page: " + str(idx+1))
