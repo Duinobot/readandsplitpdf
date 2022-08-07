@@ -4,7 +4,7 @@ import re
 PDF_FILE_PATH = ""
 PDF_PATH = ""
 
-reader = PdfReader(PDF_PATH)
+reader = PdfReader(PDF_FILE_PATH)
 
 for idx, page in enumerate(reader.pages):
     writer = PdfWriter()
