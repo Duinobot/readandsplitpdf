@@ -1,8 +1,8 @@
 from PyPDF2 import PdfWriter, PdfReader
 import re
 
-PDF_FILE_PATH = ""
-PDF_PATH = ""
+PDF_FILE_PATH = "../../name.pdf"
+PDF_PATH = "../../"
 
 reader = PdfReader(PDF_FILE_PATH)
 
